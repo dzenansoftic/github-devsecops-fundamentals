@@ -39,6 +39,7 @@ jobs:
           # Install browsers for running functional tests
           npx playwright install --with-deps chromium
 
+          
       - name: Build
         run: |
           python -m mkdocs build --clean --strict --verbose --site-dir '${{ env.SITE_DIR }}'
